@@ -30,8 +30,8 @@ function crearFila(texto = '', importe = '', esVacia = false) {
   gridContainer.appendChild(importeInput);
 
   if (esVacia) {
-    textoInput.addEventListener('input', verificarGuardar); // Escuchar cambios en tiempo real
-    importeInput.addEventListener('input', verificarGuardar); // Escuchar cambios en tiempo real
+    textoInput.addEventListener('blur', verificarGuardar); // Escuchar cambios en tiempo real
+    importeInput.addEventListener('blur', verificarGuardar); // Escuchar cambios en tiempo real
   }
 }
 
