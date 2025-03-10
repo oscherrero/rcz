@@ -29,6 +29,16 @@ function renderGrid(data) {
     gridContainer.appendChild(textInput);
     gridContainer.appendChild(importInput);
   });
+
+  if (isEditing) {
+    // Agregar fila en blanco al final
+    const emptyTextInput = document.createElement('input');
+    const emptyImportInput = document.createElement('input');
+    emptyImportInput.type = 'number';
+
+    gridContainer.appendChild(emptyTextInput);
+    gridContainer.appendChild(emptyImportInput);
+  }
 }
 
 function toggleEditMode() {
@@ -45,6 +55,11 @@ function saveChanges() {
   for (let i = 0; i < inputs.length; i += 2) {
     const text = inputs[i].value;
     const importe = parseFloat(inputs[i + 1].value) || 0; // Si no es numérico, guarda 0
+
+    if (text.trim() === '' && importe === 0) {
+      // Ignorar filas en blanco
+      continue;
+    }
 
     if (text.trim() === '') {
       alert('El texto no puede estar vacío.');
