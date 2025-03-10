@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.3, user-scalable=no, orientation=portrait">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.3, user-scalable=no, orientation=portrait">
   <title>Demo</title>
   <link rel="manifest" href="/rcz/manifest.json">
   <link rel="stylesheet" href="/rcz/style.css">
@@ -19,17 +20,25 @@
     </div>
     <nav>
       <ul>
-        <li onClick="closeMenu(); chiste()" class="oculto_NO" >CHISTE DEL DIA</li>
+        <li onClick="closeMenu(); chiste()" class="oculto_NO">CHISTE DEL DIA</li>
         <li onClick="closeMenu(); cambiarTema()">ACERCA DE</li>
         <li onClick="closeMenu(); acercade()">ACERCA DE</li>
-        <li >...</li> 
+        <li>...</li>
       </ul>
     </nav>
   </header>
 
   <main>
-      <section id="pag1"> 
-      </section>
+    <section id="grid-section">
+      <div id="grid-container"></div>
+      <button id="edit-button">Editar</button>
+      <button id="save-button" style="display: none;">Guardar</button>
+
+      <script src="scriptgrid.js"></script>
+
+    </section>
+
+
   </main>
 
   <footer>
@@ -37,7 +46,7 @@
   </footer>
 
   <script src="script.js"></script>
- 
+
 </body>
 
 </html>

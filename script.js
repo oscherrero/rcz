@@ -16,7 +16,6 @@ function init() {
   cambiarTema()
 }
 
-
 function info() {
   const anchoPantalla = window.innerWidth;
   const resPantalla = window.devicePixelRatio

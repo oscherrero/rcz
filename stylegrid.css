@@ -1,0 +1,12 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas: texto e importe */
+    gap: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #grid-container input {
+    width: 100%;
+    box-sizing: border-box;
+  }
