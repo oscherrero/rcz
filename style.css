@@ -110,65 +110,6 @@ main {
   padding: 1rem    ;
 }
 
-body button,
-body input,
-body label {
-  font-size: inherit;
-}
-
-.logform {
-  background-color: var(--color-blanco);
-  border: 1vw solid var(--color-acento);
-  border-radius: 3vw;
-  padding: 2% 30%;
-  text-align: center;
-  color: var(--color-acento);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.espaciado {
-  gap: 3vw;
-}
-
-.logform label {
-  margin-bottom: 5px;
-}
-
-.marco {
-  background-color: white; 
-  opacity: 90%;
-  border: 0.15rem solid var(--color-acento);
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 2rem;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-
-.logform select, .logform input {   
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 45px;
-  border: 2px solid var(--color-acento) !important;
-  border-radius: 4px;
-  font-size: inherit;
-  background: inherit;
-}
-
-.logform button {
-  width: 100%;
-  padding: 15px;
-  background-color: var(--color-acento);
-  color: var(--color-blanco);
-
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
 .imagenEspera{
   position:absolute;
   bottom:0;
