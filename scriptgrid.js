@@ -20,11 +20,13 @@ function renderGrid(data) {
     const textInput = document.createElement('input');
     textInput.value = item.texto;
     textInput.disabled = !isEditing;
+    textInput.style.backgroundColor = isEditing ? 'white' : '';
 
     const importInput = document.createElement('input');
     importInput.value = item.importe;
     importInput.type = 'number';
     importInput.disabled = !isEditing;
+    importInput.style.backgroundColor = isEditing ? 'white' : '';
 
     gridContainer.appendChild(textInput);
     gridContainer.appendChild(importInput);
@@ -35,6 +37,7 @@ function renderGrid(data) {
     const emptyTextInput = document.createElement('input');
     const emptyImportInput = document.createElement('input');
     emptyImportInput.type = 'number';
+    emptyImportInput.style.backgroundColor = 'white'; 
 
     gridContainer.appendChild(emptyTextInput);
     gridContainer.appendChild(emptyImportInput);
