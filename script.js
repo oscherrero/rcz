@@ -23,7 +23,7 @@ function info() {
 }
 
 async function chiste(){ 
-  const elem1 = document.getElementById("elemento1") 
+  const elem1 = document.getElementById("pag1") 
   const elemTitulo=document.getElementById("tituloGranja")
 
   elem1.classList.remove("oculto");
@@ -38,7 +38,7 @@ async function chiste(){
 }
 
 function acercade(){ 
-  const elem1 = document.getElementById("elemento1") 
+  const elem1 = document.getElementById("pag1") 
   elem1.innerHTML = "<div class='marco'><h3>ENCABEZADO ACERCA DE</h3><p>Realizada por OscarHR.</p><p>04/01/2025</p></div> <br><br>"
   elem1.innerHTML += "<div> Ancho: "+ window.innerWidth +"</div>"
   elem1.innerHTML += "<div> Alto: "+ window.innerHeight; +"</div>"
