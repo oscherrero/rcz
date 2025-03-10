@@ -12,6 +12,7 @@ window.onload=init()
 function init() {
 
   var tema=localStorage.getItem("tema")!=null?parseInt(localStorage.getItem("tema"))-1:99;
+  localStorage.setItem("tema",tema)
   cambiarTema()
 }
 
